@@ -2,6 +2,8 @@
 
 Hey guys, I domesticated Docker! A silly little script that wraps docker compose commands, mostly useful because of `docker-rollover`. 
 
+
+![good-boy](./good-boys/good-boy.jpeg)
 ## Tricks
 
 - `docker-sit` : `docker compose pause`

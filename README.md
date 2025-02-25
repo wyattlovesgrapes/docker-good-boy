@@ -6,9 +6,9 @@ Hey guys, I domesticated Docker! A silly little script that wraps docker compose
 ![good-boy](./good-boys/good-boy.jpeg)
 ## Tricks
 
-- `docker-sit` : `docker compose pause`
-- `docker-up` : `docker compose up -d`
-- `docker-down` : `docker compose down`
+- `docker-sit <optional-container-name>` : `docker compose pause`
+- `docker-up <optional-container-name>` : `docker compose up -d`
+- `docker-down <optional-container-name>` : `docker compose down`
 - `docker-rollover` : `docker-compose down && - docker-compose build --no-cache && docker-compose up -d`
 - `docker-good-boy` && `docker-gb` : `docker ps && echo \"woof\"`
 
@@ -21,7 +21,15 @@ Hey guys, I domesticated Docker! A silly little script that wraps docker compose
 
 3. If you get the `~/.zshrc not found!` error, make one using `touch ~/.zshrc`.
 
-4. Else, run `./docker_good_boy.sh` to add the aliases to your `~/.zshrc`.
+4. Then, run `./docker_good_boy.sh` to add the aliases to your `~/.zshrc`.
+   
+5. Reload you `/.zshrc` with `source ~/.zshrc`. 
+
+## Updating
+
+All you should need to do is repeat the above steps, but if you run into issues try:
+
+1. Clearing the aliases and functions manually with `nano ~/.zshrc` then repeat the above steps.
 
 ## 
 [![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=fff)](#)

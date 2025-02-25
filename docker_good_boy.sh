@@ -1,5 +1,6 @@
 #!/bin/bash
 
+VERSION="0.1.1"
 # Function definitions
 SIT='docker-sit() { 
   docker compose pause "$@"; 
@@ -35,7 +36,7 @@ if [ -f ~/.zshrc ]; then
   echo "$ROLLOVER" >> ~/.zshrc
   echo "$DGBS" >> ~/.zshrc
   echo "$DGB" >> ~/.zshrc
-  echo "Functions and aliases added to ~/.zshrc successfully!"
+  echo "Installed docker_good_boy successfully! Version: $VERSION"
 else
   echo "~/.zshrc not found!"
 fi
